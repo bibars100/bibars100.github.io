@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0px 10px;
+  background: #f1f1f1;
+}
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  text-align: center;
+  background-color: red;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 257px;
+  text-decoration: none;
+  background-repeat: no-repeat;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  background-image: url('img/8.png');
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 60px;
+  text-align: center;
+  background-image: url('img/3.png');
+  margin-top: 30px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+.card{  
+  background-color:#808080;
+  background-repeat: no-repeat;
+  background-size: center;
+  padding: 20px 20px;
+  border-radius:10px;
+}
+.header {
+  background-image: url('img/1.png');
+  padding: 10px 10px;
+  text-align: center;
+  color: #DD784C;
+}
+.lp{
+	font-family: 'Lobster', cursive;
+}
+.urd{
+	font-family: 'Lobster', cursive;
+	color: #DD784C
+}
+.suk{
+	font-family: 'Boogaloo', cursive;
+
+}
+h2{
+	text-align: center;
+}
+.al:hover, .al:active {
+  background-color: red;
+}
+.al:link, .al:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
